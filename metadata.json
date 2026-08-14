@@ -1,0 +1,6 @@
+{
+  "name": "Deutsch Fácil AI",
+  "description": "Aplicativo completo de alemão para brasileiros do A1 ao C1 com Professor Virtual IA, lições guiadas, flashcards inteligentes, simulador de pronúncia e situações reais na Alemanha.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

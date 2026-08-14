@@ -1,0 +1,190 @@
+import { LifeInGermanyTopic } from '../types';
+
+export const initialLifeInGermanyData: LifeInGermanyTopic[] = [
+  {
+    id: 'life_anmeldung',
+    titlePt: 'Anmeldung: O Registro de Residência Obrigatório',
+    titleDe: 'Die Wohnsitzanmeldung beim Bürgeramt',
+    icon: 'Building2',
+    category: 'Burocracia Inicial',
+    importanceLevel: 'Urgente / Chegada',
+    summaryPt: 'O primeiro e mais crucial passo ao chegar na Alemanha. Sem a Anmeldung você não consegue Steuer-ID (número fiscal), conta em banco ou contrato de trabalho.',
+    stepByStepPt: [
+      '1. Alugue um quarto ou apartamento que permita registro (procure anúncios com "Anmeldung möglich").',
+      '2. Peça ao locador o formulário assinado chamado "Wohnungsgeberbestätigung" (declaração do proprietário).',
+      '3. Agende um horário (Termin) no Bürgeramt / Bürgerbüro da sua cidade.',
+      '4. Compareça com seu Passaporte, a Wohnungsgeberbestätigung e a certidão de casamento/nascimento (se acompanhado).',
+      '5. Receba na hora a "Meldebestätigung". Guarde este documento a 7 chaves!',
+    ],
+    keyVocabulary: [
+      {
+        german: 'Wohnungsgeberbestätigung',
+        article: 'die',
+        portuguese: 'Declaração do proprietário que confirma que você mora no imóvel.',
+        contextPt: 'Obrigatória para apresentar no Bürgeramt.',
+      },
+      {
+        german: 'Meldebestätigung',
+        article: 'die',
+        portuguese: 'Certificado de registro de residência emitido pelo município.',
+        contextPt: 'Documento que comprova seu endereço oficial na Alemanha.',
+      },
+      {
+        german: 'Steueridentifikationsnummer (Steuer-ID)',
+        article: 'die',
+        portuguese: 'Número de identificação fiscal (CPF alemão).',
+        contextPt: 'Enviado pelo correio para sua casa cerca de 2 a 4 semanas após a Anmeldung.',
+      },
+    ],
+    practicalTipsPt: [
+      'Em cidades grandes como Berlim, Munique ou Frankfurt, agendamentos abrem de manhã cedo (entre 7h30 e 8h). Fique atualizando a página para pegar cancelamentos.',
+      'Na pergunta sobre religião ("Religionszugehörigkeit"), se você declarar católico ou evangélico, será cobrado o imposto eclesiástico (Kirchensteuer, cerca de 8-9% sobre seu imposto de renda). Se não quiser pagar, responda "keine" (nenhuma).',
+    ],
+    officialLinksOrNotesPt: 'O prazo legal oficial é de até 14 dias após a mudança.',
+  },
+  {
+    id: 'life_krankenkasse',
+    titlePt: 'Krankenkasse: O Sistema de Saúde Alemão',
+    titleDe: 'Die Gesetzliche & Private Krankenversicherung',
+    icon: 'ShieldAlert',
+    category: 'Saúde & Proteção',
+    importanceLevel: 'Urgente / Chegada',
+    summaryPt: 'Ter seguro saúde é OBRIGATÓRIO por lei para qualquer pessoa residindo na Alemanha. A maioria das pessoas usa o seguro público (Gesetzliche Krankenversicherung - GKV).',
+    stepByStepPt: [
+      '1. Escolha uma seguradora pública (as mais populares são TK - Techniker Krankenkasse, AOK, Barmer, DAK).',
+      '2. Se estiver empregado, informe seu empregador qual Krankenkasse você escolheu. Metade da contribuição é paga pela empresa e metade descontada do seu salário.',
+      '3. Envie uma foto para receber o cartão do convênio (Gesundheitskarte) com chip.',
+      '4. Escolha um médico de família (Hausarzt) perto de casa para consultas de rotina.',
+    ],
+    keyVocabulary: [
+      {
+        german: 'Gesundheitskarte',
+        article: 'die',
+        portuguese: 'Cartão magnético do convênio médico.',
+        contextPt: 'Apresente na recepção de todo médico ou dentista.',
+      },
+      {
+        german: 'Hausarzt',
+        article: 'der',
+        portuguese: 'Médico clínico geral / Médico de família.',
+        contextPt: 'Sua porta de entrada para qualquer atendimento e atestados.',
+      },
+      {
+        german: 'Krankschreibung / AU (Arbeitsunfähigkeitsbescheinigung)',
+        article: 'die',
+        portuguese: 'Atestado médico de incapacidade de trabalho.',
+        contextPt: 'Hoje transmitido eletronicamente (eAU) direto para o convênio e empregador.',
+      },
+    ],
+    practicalTipsPt: [
+      'Consultas preventivas (Check-up, dentista anual para bônus) são 100% cobertas sem custos adicionais.',
+      'Em caso de urgência fora do horário comercial, ligue para o número 116 117 (atendimento médico não emergencial) ou 112 (ambulância/bombeiros).',
+    ],
+    officialLinksOrNotesPt: 'A saúde pública alemã não tem carência para emergências e tratamentos essenciais.',
+  },
+  {
+    id: 'life_wohnung',
+    titlePt: 'Mietvertrag: Alugar Imóvel sem Cair em Golpes',
+    titleDe: 'Wohnungssuche und Mietrecht',
+    icon: 'Home',
+    category: 'Moradia',
+    importanceLevel: 'Essencial',
+    summaryPt: 'O mercado de moradia na Alemanha é concorrido. Entenda a diferença entre Kaltmiete e Warmmiete, Kaution e documentos exigidos.',
+    stepByStepPt: [
+      '1. Prepare sua "Bewerbungsmappe" (pasta com: 3 últimos holerites/Gehaltsabrechnungen, cópia do Passaporte/Visto, Schufa-Auskunft e Mietschuldenfreiheitsbescheinigung).',
+      '2. Busque nos portais ImmoScout24, Immowelt, WG-Gesucht e Kleinanzeigen.',
+      '3. Visite o imóvel pessoalmente. NUNCA transfira dinheiro antes de assinar o contrato e receber as chaves!',
+      '4. Faça a vistoria de entrada (Wohnungsübergabeprotokoll) fotografando qualquer defeito existente.',
+    ],
+    keyVocabulary: [
+      {
+        german: 'Kaltmiete vs. Warmmiete',
+        article: 'die',
+        portuguese: 'Kaltmiete é o aluguel puro; Warmmiete inclui condomínio e estimativa de aquecimento/água.',
+        contextPt: 'Energia elétrica (Strom) e internet quase sempre são contratados separadamente pelo inquilino.',
+      },
+      {
+        german: 'Kaution',
+        article: 'die',
+        portuguese: 'Depósito caução de garantia (máximo legal de 3 Kaltmieten).',
+        contextPt: 'Pode ser parcelado em até 3 vezes e deve ser guardado em conta caução separada.',
+      },
+      {
+        german: 'Nebenkostenabrechnung',
+        article: 'die',
+        portuguese: 'Fechamento anual das despesas do condomínio e aquecimento.',
+        contextPt: 'Pode gerar devolução de dinheiro se você economizou ou cobrança extra (Nachzahlung).',
+      },
+    ],
+    practicalTipsPt: [
+      'Cuidado com golpes: Se o "proprietário" disser que está fora do país e pede para pagar via Airbnb ou Western Union para mandar a chave pelo correio, é 100% GOLPE.',
+      'Respeite o "Ruhezeit" (horário de silêncio obrigatório): todos os dias das 22h às 7h e domingos/feriados o dia inteiro.',
+    ],
+    officialLinksOrNotesPt: 'Faça seguro de responsabilidade civil (Haftpflichtversicherung) - custa 4 a 6 euros por mês e evita grandes prejuízos.',
+  },
+  {
+    id: 'life_rundfunkbeitrag',
+    titlePt: 'Rundfunkbeitrag: A Taxa de TV e Rádio (GEZ)',
+    titleDe: 'Der Rundfunkbeitrag von ARD, ZDF und Deutschlandradio',
+    icon: 'Tv',
+    category: 'Finanças & Taxas',
+    importanceLevel: 'Essencial',
+    summaryPt: 'Uma carta oficial que 100% das pessoas recebem após fazer a Anmeldung. É uma taxa por residência (e não por pessoa).',
+    stepByStepPt: [
+      '1. Logo após a Anmeldung, uma carta da "ARD ZDF Deutschlandradio Beitragsservice" chegará na sua caixa de correio.',
+      '2. Acesse o site oficial (rundfunkbeitrag.de) com o código de 9 dígitos da carta.',
+      '3. Se você mora sozinho ou com sua família: cadastre sua conta para débito automático (cerca de 18,36€ por mês por residência).',
+      '4. Se você mora em república (WG) ou alguém na casa já paga: basta informar o número de inscrição (Beitragsnummer) dessa pessoa para não pagar em duplicidade!',
+    ],
+    keyVocabulary: [
+      {
+        german: 'Beitragsnummer',
+        article: 'die',
+        portuguese: 'Número de registro do pagador da taxa de radiodifusão pública.',
+        contextPt: 'Se seu colega de quarto já tiver esse número, você fica isento de novo pagamento.',
+      },
+    ],
+    practicalTipsPt: [
+      'NUNCA ignore as cartas do Rundfunkbeitrag. A dívida acumula multas pesadas e pode manchar seu score na Schufa.',
+    ],
+    officialLinksOrNotesPt: 'Cobrança por moradia física (Wohnung), não por aparelho de TV ou celular.',
+  },
+  {
+    id: 'life_bank_post',
+    titlePt: 'Bancos e Correios na Alemanha',
+    titleDe: 'Bankkonto eröffnen und die Deutsche Post',
+    icon: 'CreditCard',
+    category: 'Cotidiano & Finanças',
+    importanceLevel: 'Cotidiano',
+    summaryPt: 'Como abrir conta corrente (Girokonto), entender a diferença entre EC-Karte (Girocard) e cartões de crédito, e receber correspondências.',
+    stepByStepPt: [
+      '1. Bancos digitais (N26, Revolut, DKB, C24) permitem abertura rápida com passaporte e vídeo-chamada.',
+      '2. Bancos tradicionais (Sparkasse, Deutsche Bank, Commerzbank) exigem agendamento na agência.',
+      '3. Coloque seu SOBRENOME de forma legível na sua caixa de correio (Briefkasten). Na Alemanha, cartas SEM o sobrenome no interfone/caixa são devolvidas ao remetente!',
+    ],
+    keyVocabulary: [
+      {
+        german: 'Girokonto',
+        article: 'das',
+        portuguese: 'Conta corrente bancária.',
+        contextPt: 'Utilizada para receber salário e pagar débitos automáticos (SEPA-Lastschrift).',
+      },
+      {
+        german: 'Girocard / EC-Karte',
+        article: 'die',
+        portuguese: 'Cartão de débito alemão padrão.',
+        contextPt: 'Muitos estabelecimentos pequenos ainda aceitam apenas Girocard ou dinheiro em espécie (Barzahlung).',
+      },
+      {
+        german: 'Briefkasten',
+        article: 'der',
+        portuguese: 'Caixa de correio com seu nome.',
+        contextPt: 'Toda burocracia alemã funciona via cartas físicas.',
+      },
+    ],
+    practicalTipsPt: [
+      'Sempre carregue algum dinheiro em espécie (Bargeld). Padarias, feiras livres e alguns restaurantes tradicionais não aceitam cartão de crédito internacional.',
+    ],
+    officialLinksOrNotesPt: 'O correio oficial é a Deutsche Post / DHL.',
+  },
+];
